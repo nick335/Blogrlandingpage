@@ -1,0 +1,53 @@
+@import 'mixin';
+@import 'functions';
+
+.main{
+ &__section2{
+  margin: 5rem 0;
+  background: linear-gradient(to bottom left, $background-section-pcolor, $backgrond-section-scolor);
+  width: 100vw;
+  height: inherit;
+  border-bottom-left-radius: 120px;
+  border-top-right-radius: 150px;
+  z-index: 100;
+
+  &-background{
+   background: url(../images/bg-pattern-circles.svg);
+   background-repeat: no-repeat;
+   background-size: 70vw;
+   background-position: left -200px top -440px;
+   width: 100vw;
+   height: 400px;
+   z-index:10;
+   padding:0 8rem;
+   @include flexCenter;
+  }
+
+  &-img__div{
+   .section2-img{
+    margin-top: 40px;
+   }
+  }
+  
+  &-content__div{
+   text-align: left;
+   padding-left: 1rem;
+   // text-align: center;
+   h3{
+    font-family: 'Overpass', sans-serif;
+    font-family: weight(large);
+    font-size: 2.4rem;
+    padding-bottom: 1.7rem;
+    color: $white;
+   }
+   p{
+    font-family: 'Overpass', sans-serif;
+    font-size: 1rem;
+    padding-right: 1.2rem;
+    font-weight: weight(small);
+    line-height: 1.5;
+    color: $white;    
+   }
+  }
+ }
+}

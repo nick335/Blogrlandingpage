@@ -1,0 +1,46 @@
+@import 'mixin';
+@import 'functions';
+
+.footer{
+ margin-top: 4rem;
+ background-color: $footer-background-color;
+ border-top-right-radius: 120px;
+ overflow: hidden;
+
+ &-structure{
+  @include justFlex;
+  margin: 0rem 8rem;
+  padding: 5rem 0;
+
+  &__header-div{
+   margin-right: 11rem;
+   h3{
+    font-size: 2.5rem;
+    color: $white;
+    font-family: 'Overpass', sans-serif;
+    font-weight: weight(large);
+   }
+  }
+
+  &__list-div{
+   @include gridTemplate3;
+   grid-gap:11rem;
+
+   &__container{
+    h4{
+     font-size: 18px;
+     font-family: 'Ubuntu', sans-serif;
+     font-weight: weight(regular);
+     color: $white;
+     padding-bottom: 2rem;
+    }
+    .footer-structure__list-item{
+     padding-bottom: 18px;
+     color: $footer-text-color;
+     font-family: 'Ubuntu', sans-serif;
+    }
+   }
+  }
+ }
+
+}

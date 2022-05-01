@@ -1,0 +1,55 @@
+//utility classes
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ 
+}
+body{
+ background-color: hsl(0, 0%, 98%);
+ overflow-x: hidden;
+}
+li{
+ list-style: none;
+}
+a{
+ text-decoration: none;
+}
+.btn{
+ outline: none;
+ border: none;
+ background: none;
+ font-family: 'Ubuntu', sans-serif;
+ font-size: 1.1rem;
+ font-weight: 600;
+ cursor: pointer;
+}
+//font-family: 'Overpass', sans-serif;
+//
+// variables
+$primary-header-color:hsl(26, 100%, 96%);
+$secondary-header-color:hsl(9,100%, 86%);
+$background-header-pcolor:hsl(13, 100%, 72%);
+$background-header-scolor:hsl(353, 100%, 62);
+$white:hsl(0, 0%, 100%);
+$footer-text-color:hsl(240, 2%, 79%);
+$main-text-color:hsl(207,13%,34%);
+$footer-background-color:hsl(240, 10%,16%);
+$main-header-color:hsl(208, 49%, 24%);
+$body-color:hsl(0, 0%, 98%);
+$background-section-pcolor:hsl(237, 23%, 32%);
+$backgrond-section-scolor:hsl(237,17%,21%);
+$font-weights:(
+"small":300, 
+"regular":400,
+"medium":500,
+"large":600,
+"xlarge":700
+);
+//media query
+$media-desktop: "only screen and (max-width : 1024px)";
+$media-tablet: "only screen and (max-width : 768px)";
+$media-mobile: "only screen and (max-width : 600px)";
+$media-mobile-sm: "only screen and (max-width : 414px)";
+$media-mobile-xsm: "only screen and (max-width : 395px)";

@@ -1,0 +1,60 @@
+// .navbar{
+//  color: white;
+//  width: 100vw;
+//  @include flexSpaceBetween;
+//  padding: 2rem 6rem;
+//  z-index: 3;
+// }
+// .navbar-list{
+// @include flexCenter;
+// // display: none;
+
+// h1{
+//  font-family: 'Overpass', sans-serif;
+//  font-size: 3rem;
+//  font-weight: weight(large);
+//  padding-left: 1rem;
+//  color: $primary-header-color;
+//  z-index: 5;
+// }
+
+// &__items{
+//  @include flexCenter;
+//  padding-left: 2rem;
+// }
+// &__item{
+//  padding: 0 2rem;
+//  @include flexCenter;
+
+//  a{
+//   font-family: 'Ubuntu', sans-serif;
+//   font-weight: weight(medium);
+//   font-size: 1.1rem;
+//   color: $secondary-header-color;
+//   cursor: pointer;
+
+//   i{
+//     padding-left: 0.5rem;
+//      margin-top: 0.2rem;
+//   }
+//  }
+// }
+// }
+
+// .navbar__btn{
+//  @include flexCenter;
+//  margin-top: 1rem;
+//  button{
+//    margin-left: 2rem;
+//  }
+//  .btn{
+//    color: $secondary-header-color;
+//  }
+//  .btn-primary{
+//    @include btnPrimary;
+
+//    &:hover{
+//      @include btnPrimaryHover;
+//    }
+//  }
+// }

@@ -1,0 +1,65 @@
+@import 'mixin';
+@import 'functions';
+
+
+@media #{$media-desktop}{
+ .main{
+  &__section2{
+
+   &-background{
+    background-size: 80vw;
+    background-position: left -180px top -320px;
+    padding: 0 2rem;
+
+   }
+
+   &-content__div{
+
+    h3{
+     font-size: 1.78rem;
+    }
+    p{
+     font-size: 1.05rem;
+     padding-right: 0rem;
+    }
+   }
+  }
+ }  
+}
+
+@media #{$media-mobile}{
+ .main{
+
+  &__section2{
+   margin-top: 15rem;
+   border-top-right-radius: 100px;
+   &-background{
+    @include flexColumn;
+    background-size: 158vw;
+    height: 600px;
+    
+    background-position: left -110px top -250px;
+   }
+
+   &-img__div{
+    .section2-img{
+     width: 100vw;
+     margin-top: -16.7rem;
+    }
+   }
+
+   &-content__div{
+    text-align: center;
+    padding-left: 0rem;
+
+    h3{
+    font-size: 2.7rem;
+    }
+    p{
+     font-size: 1.2rem;
+     opacity: 0.9;
+    }
+   }
+  }
+ }
+}

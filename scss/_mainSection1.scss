@@ -1,0 +1,59 @@
+@import 'mixin';
+@import 'functions';
+
+.main{
+ margin-top: 13vh;
+ background-color: $body-color;
+ overflow: hidden;
+
+ &__section1{
+  margin-left:8rem;
+
+  &-heading{
+   text-align: center;
+   font-family: 'Overpass', sans-serif;
+   font-weight: weight(large);
+   font-size: 2.5rem;
+   color: $main-header-color;
+  }
+  &-content{
+   @include flexCenter;
+
+   &__para-div{
+    text-align: left;
+
+    &-content{
+     padding-bottom: 3rem;
+
+     h3{
+      font-family: 'Overpass', sans-serif;
+      font-family: weight(large);
+      font-size: 1.7rem;
+      padding-bottom: 1.7rem;
+      color: $main-header-color;
+     }
+     p{
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 0.95rem;
+      font-weight: weight(medium);
+      line-height: 1.9;
+      margin-right: 10rem;
+      color: $main-text-color;
+     }
+    }
+   }
+
+   &__img-div{
+
+    img{
+     width: 58vw;
+     // height:800px;
+     object-fit: cover;
+     object-position: -20% -150%;
+     margin-top: -100px;
+     margin-right: -240px;
+    }
+   }
+  }
+ }
+}

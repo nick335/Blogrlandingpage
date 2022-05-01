@@ -1,0 +1,193 @@
+@import 'mixin';
+@import 'functions';
+.header{
+ overflow: hidden;
+ height: 90vh;
+ width: 100%;
+ border-bottom-left-radius: 120px;
+ background: linear-gradient(90deg, $background-header-pcolor 30%, $background-header-scolor 70%);
+
+
+ #{&}__background{
+  background: url(../images/bg-pattern-intro-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 370vh;
+  width: 230vw;
+  background-position: left -400px top -1350px;
+  z-index: 1;
+  color: $background-header-scolor;
+  fill: white;
+
+ }
+
+ .navbar{
+   width: 100vw;
+   @include flexSpaceBetween;
+   padding: 2rem 8rem;
+
+   &-list{
+    @include flexCenter;
+    // width: 100vw;
+
+    h1{
+      font-family: 'Overpass', sans-serif;
+      font-size: 3rem;
+      font-weight: weight(large);
+      // margin-left: 2rem;
+      margin-right: 2rem;
+      color: $primary-header-color;
+      z-index: 5;
+     }
+
+     &__div{
+       @include flexSpaceBetween;
+       width: 75vw;
+      //  display: none; 
+     }
+     &__items{
+      @include flexCenter;
+      padding-left:2rem;
+      padding-right:7rem;
+     }
+     &__item{
+      padding: 0 2rem;
+      @include flexCenter;
+     
+      a{
+       font-family: 'Ubuntu', sans-serif;
+       font-weight: weight(medium);
+       font-size: 1.1rem;
+       color: $secondary-header-color;
+       cursor: pointer;
+     
+       i{
+         padding-left: 0.5rem;
+          margin-top: 0.2rem;
+       }
+      }
+    }
+
+    .navbar__btn{
+      @include flexCenter;
+      // margin-top: 1rem;
+      button{
+        margin-left: 2rem;
+      }
+      .btn{
+        color: $secondary-header-color;
+      }
+      .btn-primary{
+        @include btnPrimary;
+     
+        &:hover{
+          @include btnPrimaryHover;
+        }
+      }
+     }    
+   }
+ }
+
+.connect{
+  position: relative; 
+  text-decoration: underline 2px none;
+  transition: text-decoration 1s eases;
+
+   &.active{
+    text-decoration: underline 2px currentColor;
+
+    i{
+      transform: rotate(180deg);
+      margin-left: 0.5rem;
+      // transition: all 0.2s ease;
+  
+    }
+  }
+  .nested-list{
+    position: absolute;
+    top:40px;
+    left: 5px;
+    background-color: $white;
+    // color: black;
+    border-radius: 10px;
+    width: inherit;
+    z-index: 5;
+    padding: 2rem 1rem 1rem 1rem;
+    display: none;
+    
+    &.active{
+      display: block;
+    }
+    
+    &__item{
+      padding-right: 4.5rem;
+      padding-bottom: 1rem;
+      padding-left: 1rem;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: weight(medium);
+      color: hsl(208, 49%, 24%);
+      cursor: pointer;
+      
+      &:hover{
+        color: black;
+      }
+    }
+  }
+}
+.navbar_toggle{
+  display: none;
+}
+ .hero-section{
+  width: 100vw;
+
+  &__text{
+    // text-align: center;
+    margin-left: 10rem;
+    
+
+    &-header{
+      padding-top: 7rem;
+      font-size: 4rem;
+      font-family: 'Overpass', sans-serif;
+      text-align: center;
+      font-weight: weight(large);
+      color: $primary-header-color;
+    }
+
+    &-para{
+      padding-top: 0.8rem;
+      font-size: 1.5rem;
+      text-align: center;
+      color: $primary-header-color;
+      font-family: 'Overpass', sans-serif;
+      opacity: 0.8;
+    }
+  }
+
+  &__btn{
+    margin-left: 10rem;
+    margin-top: 2rem;
+    @include flexCenter;
+
+    button{
+      margin-left: 1rem;
+    }
+
+    .btn-primary{
+      @include btnPrimary;
+
+      &:hover{
+        @include btnPrimaryHover;
+      }
+    }
+    .btn-secondary{
+      @include btnSecondary;
+
+      &:hover{
+        @include btnSecondaryHover;
+      }
+    }
+  }
+ }
+
+}

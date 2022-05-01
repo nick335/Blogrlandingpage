@@ -1,0 +1,60 @@
+@import 'mixin';
+@import 'functions';
+
+
+@media #{$media-desktop}{
+ .footer{
+  &-structure{
+   margin: 0 2rem;
+
+   &__header-div{
+    margin-right: 9rem;
+   }
+
+   &__list-div{
+    grid-gap: 9rem;
+   }
+  }
+ }
+
+}
+
+@media #{$media-mobile}{
+ .footer{
+  &-structure{
+   margin: 0;
+   @include flexColumn;
+   align-items: center;
+
+   &__header-div{
+    margin-right: 0rem;
+
+    h3{
+     font-size: 3rem
+    }
+   }
+   &__list-div{
+    @include gridTemplate1;
+    grid-gap: 0rem;
+    margin-top: 2rem;
+
+    &__container{
+     text-align: center;
+     
+     h4{
+      text-align: center;
+      font-size: 1.3rem;
+     }
+     .footer-structure__list-items{
+      padding-bottom: 2rem;
+      text-align: center;
+     }
+
+     .footer-structure__list-item{
+      padding-bottom: 1rem;
+     }
+    }
+   }
+  }
+ }
+}

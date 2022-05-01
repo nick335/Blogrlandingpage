@@ -1,0 +1,192 @@
+@import 'config';
+@import 'mixin';
+
+@media #{$media-desktop}{
+.header{
+
+ #{&}__background{
+  height: 300vh;
+  width:240vw;
+  background-position: left -350px top -1000px;
+ }
+ .navbar{
+  padding: 2rem 1.5rem;
+
+ &-list{
+  
+ &__items{
+  padding-right: 0rem;
+ }
+ &__item{
+  padding: 0 1rem;
+ }
+ }
+ }
+ .hero-section{
+  &__text{
+   margin-left: 0rem;
+  }
+
+  &__btn{
+   margin-left: 2rem;
+  }
+ }
+}
+}
+
+@media #{$media-mobile}{
+.header{
+ .navbar-list{
+  position: relative;
+
+  h1{
+   font-size: 2rem;
+  }
+  &__div{
+   position: absolute;
+   width: 89vw;
+   padding: 1rem 0;
+   top:-1060px;
+   left:0vw;
+   // width: 100vw;
+   background: $white;
+   @include flexColumn;
+   z-index: 150;
+   transition: all 0.2s ease-in;
+  }
+
+  &__div.is-active{
+   top:50px;
+   transition: all 0.2s ease-in;
+  }
+  &__items{
+   @include flexColumn;
+   padding-left: 0rem;
+   padding-right: 0rem;
+  }
+  &__item{
+   padding: 1rem 0;
+   
+   a{
+    color: hsl(208, 49%, 24%);
+
+    i{
+     color: $secondary-header-color;
+    }
+   }
+  }
+ }
+ .navbar__btn{
+  @include flexColumn;
+  padding: 1rem 0rem;
+  border-top: 1px solid hsl(0, 0%, 90%);
+  width: 76vw;
+
+  button{
+   margin-left: 0;
+   margin-bottom: 1rem;
+  }
+  .btn-primary{
+   @include btnSecondary;
+   
+
+   &:hover{
+    @include btnSecondary;
+   }
+  }
+ 
+
+ }
+ .navbar_toggle{
+  display: block;
+  .bar{
+   width: 25px;
+   height: 3px;
+   margin: 5px auto;
+   transition: all 0.3s ease-in-out;
+   background: $primary-header-color;
+   display: block;
+   cursor: pointer;
+  }
+ }
+ .navbar_toggle.is-active .bar:nth-child(2){
+  opacity: 0;
+ }
+ .navbar_toggle.is-active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+ }
+.navbar_toggle.is-active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+ }
+ .connect{
+  text-decoration: none;
+  @include flexColumn;
+
+  &.active{
+   text-decoration: none;
+  }
+
+  .nested-list{
+   position: static;
+   position: relative;
+   top:0;
+   left:0;
+   background:hsl(0, 0%, 90%);
+   width:76vw;
+   text-align: center;
+   border-radius: 0;
+   padding: 1rem 0;
+   margin: 1rem 0;
+    overflow: visible;
+
+   &__item{
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0.5rem;
+   }
+  }
+ }
+ .hero-section{
+  &__text{
+   margin-left: 0rem;
+   padding: 0 1.5rem;
+
+   &-header{
+    font-size: 2.5rem;
+   }
+
+   &-para{
+    font-size: 1.2rem;
+   }
+  }
+
+  &__btn{
+   margin-left: 0rem;
+  }
+ }
+
+}
+}
+
+@media #{$media-mobile-xsm}{
+.header{
+ #{&}__background{
+  background: url(../images/bg-pattern-intro-mobile.svg);
+  height: 200vh;
+  width: 100vw;
+  background-position: left -350px top -270px;
+ }
+
+ .hero-section{
+  &__text{
+   // margin-left: 2rem;
+
+   &-header{
+    padding-top: 5rem;
+    font-size: 2.28rem;
+   }
+  }
+
+ }
+}
+}

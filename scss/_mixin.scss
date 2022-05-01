@@ -1,0 +1,65 @@
+@mixin justFlex{
+ display: flex;
+}
+
+@mixin flexCenter {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+@mixin flexSpaceBetween {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+@mixin flexColumn{
+ display: flex;
+ flex-direction: column;
+}
+
+@mixin flexColumReverse{
+ display: flex;
+ flex-direction: column-reverse;
+}
+
+@mixin gridTemplate3{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+}
+
+@mixin gridTemplate1 {
+ display: grid;
+ grid-template-columns: 1fr;
+}
+@mixin btnPrimary{
+ width:150px;
+ height: 50px;
+ border-radius: 50px;
+ text-align: center;
+ background-color: $primary-header-color;
+ color: $background-header-scolor; 
+}
+
+@mixin btnPrimaryHover {
+ background-color:$background-header-scolor ;
+ color: $primary-header-color;
+ transition: all 0.3s ease-in-out;
+}
+
+@mixin btnSecondary{
+ width: 150px;
+ height: 50px;
+ border-radius: 50px;
+ text-align: center;
+ // background-color: $background-header-scolor;
+ border: 1px solid $primary-header-color;
+ color: $primary-header-color;
+}
+
+@mixin btnSecondaryHover {
+ background-color: $primary-header-color;
+ color: $background-header-scolor;
+ transition: all 0.3s ease-in-out;
+}
