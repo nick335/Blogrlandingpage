@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 - Solution URL: [solution.com](https://github.com/nick335/Blogrlandingpage)
-- Live Site URL: [sunny.com](https://nick335.github.io/sunny/)
+- Live Site URL: [sunny.com](https://nick335.github.io/Blogrlandingpage/)
 
 ## My process
 
@@ -62,6 +62,6 @@ i will like to improve my knowledge on Sass.
 - (https://freecodecamp.org/) this helped get started with working sass
 
 ## Author
-- Website - [Nicholas](https://www.your-site.com)
+- Website - [Nicholas](https://nick335.github.io/Blogrlandingpage/)
 - Frontend Mentor - [@nick335](https://www.frontendmentor.io/profile/nick335)
 - Twitter - [@ChigozieErigo](https://www.twitter.com/ChigozieErigo)
