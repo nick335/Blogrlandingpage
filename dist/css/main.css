@@ -923,6 +923,12 @@ a {
   }
 }
 
+@media only screen and (max-width: 371px) {
+  .header .hero-section__text-header {
+    font-size: 2.1rem;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .main__section1 {
     margin-left: 2rem;

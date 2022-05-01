@@ -190,3 +190,16 @@
  }
 }
 }
+
+
+@media #{$media-mobile-xxsm}{
+  .header{
+    .hero-section{
+      &__text{
+        &-header{
+          font-size: 2.1rem;
+        }
+      }
+    }
+  }
+}
